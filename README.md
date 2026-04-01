@@ -69,8 +69,8 @@ java -jar TetrisGame.jar
 
 ## 📸 Demo
 
-![Game](Ảnh chụp màn hình 2026-04-01 225353.png)
-![Game](Ảnh chụp màn hình 2026-04-01 225340.png)
+![Game](demo.png)
+![Game](demo1.png)
 
 ---
 
