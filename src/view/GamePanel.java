@@ -9,19 +9,18 @@ import java.util.Random;
 
 public class GamePanel extends JPanel {
 
-    //====== HẰNG SỐ CẤU HÌNH ======
-    private static final int TILE_W = 25;   // Tăng kích thước ô một chút cho đẹp
+    //HẰNG SỐ CẤU HÌNH 
+    private static final int TILE_W = 25;   
     private static final int TILE_H = 25;
     private static final int COLS = 10;
     private static final int ROWS = 20;
-    private static final int SPEED = 400;   // Tốc độ rơi ban đầu
-
-    //====== ĐỊNH NGHĨA CÁC KHỐI GẠCH (SHAPES) ======
+    private static final int SPEED = 400;   
+    // ĐỊNH NGHĨA CÁC KHỐI GẠCH 
     private final int[][][] SHAPES = {
         {{0,0}, {1,0}, {2,0}},          // 3 ô ngang
         {{0,0}, {1,0}, {2,0}, {3,0}},   // Khối I
         {{0,0}, {0,1}, {1,1}, {2,1}},   // Khối L
-        {{0,0}, {1,0}, {0,1}, {1,1}},   // Khối Vuông (xoay sẽ không đổi)
+        {{0,0}, {1,0}, {0,1}, {1,1}},   // Khối Vuông 
         {{1,0}, {0,1}, {1,1}, {2,1}}    // Khối chữ T
     };
 
@@ -29,7 +28,7 @@ public class GamePanel extends JPanel {
         Color.CYAN, Color.BLUE, Color.ORANGE, Color.YELLOW, Color.MAGENTA
     };
 
-    //====== TRẠNG THÁI GAME ======
+    // TRẠNG THÁI GAME
     private int currentX, currentY;
     private int[][] currentShape;
     private Color currentColor;
@@ -40,7 +39,7 @@ public class GamePanel extends JPanel {
 
     public GamePanel() {
         setPreferredSize(new Dimension(COLS * TILE_W, ROWS * TILE_H));
-        setBackground(new Color(20, 20, 20)); // Màu nền tối sâu hơn
+        setBackground(new Color(20, 20, 20)); 
         setFocusable(true);
 
         initControls();
@@ -52,15 +51,14 @@ public class GamePanel extends JPanel {
         });
         gameTimer.start();
     }
-
-    //====== HÀM XOAY KHỐI GẠCH (QUAN TRỌNG) ======
+    //HÀM XOAY KHỐI GẠCH 
     private void rotateShape() {
-        // Khối vuông (SHAPES[3]) không cần xoay để tránh lệch vị trí
+        // Khối vuông không cần xoay để tránh lệch vị trí
         if (currentShape == SHAPES[3]) return;
 
         int[][] rotated = new int[currentShape.length][2];
         for (int i = 0; i < currentShape.length; i++) {
-            // Công thức xoay ma trận 90 độ: (x, y) -> (-y, x)
+            // Công thức xoay ma trận 90 độ
             rotated[i][0] = -currentShape[i][1];
             rotated[i][1] = currentShape[i][0];
         }
@@ -71,7 +69,7 @@ public class GamePanel extends JPanel {
         }
     }
 
-    //====== TẠO KHỐI MỚI ======
+    // TẠO KHỐI MỚI
     private void spawnNewBlock() {
         int type = rand.nextInt(SHAPES.length);
         currentShape = SHAPES[type];
@@ -94,7 +92,7 @@ public class GamePanel extends JPanel {
         gameTimer.start();
     }
 
-    //====== ĐIỀU KHIỂN ======
+    //ĐIỀU KHIỂN
     private void initControls() {
         addKeyListener(new KeyAdapter() {
             @Override
@@ -172,7 +170,7 @@ public class GamePanel extends JPanel {
         // Vẽ các khối cố định
         for (int[] b : fixedBlocks) {
             g.setColor(new Color(b[2]));
-            g.fillRoundRect(b[0] + 1, b[1] + 1, TILE_W - 2, TILE_H - 2, 5, 5); // Bo góc cho đẹp
+            g.fillRoundRect(b[0] + 1, b[1] + 1, TILE_W - 2, TILE_H - 2, 5, 5); 
         }
 
         // Vẽ khối đang rơi
