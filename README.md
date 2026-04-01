@@ -2,44 +2,80 @@
 
 > Bài tập lớn môn Lập trình Java
 
-## 👥 Thành viên nhóm 11
+---
 
-| STT | Họ và Tên | Vai trò |
-|-----|----------|--------|
-| 1 | Nguyễn Hữu Nguyên | Code chính |
-| 2 | Tăng Tấn Duy Phúc  | GUI |
-| 3 | Ma Tiến Đức | Logic |
-| 4 | Ma Tiến Đức , Nguyễn Hữu Nguyên , Tăng Tấn Duy Phúc| Test |
+## 👥 Thành viên nhóm
+
+| STT | Họ và Tên                                         | Vai trò        |
+| --- | -----------------                                 | -------------- |
+| 1   | Nguyen Huu Nguyen                                 | Code chính     |
+| 2   | Ma Tien Duc                                       | Thiết kế GUI   |
+| 3   | Tang Tan Duy Phuc                                 | Xử lý logic    |
+| 4   | Ma Tien Duc, Nguyen Huu Nguyen,Tang Tan Duy Phuc  | Test & báo cáo |
 
 ---
 
-## 📝 Giới thiệu
+## 📝 Giới thiệu dự án
 
-Đây là game Tetris được xây dựng bằng Java Swing. Người chơi điều khiển các khối gạch rơi xuống, sắp xếp để tạo thành hàng ngang hoàn chỉnh để ghi điểm.
-
----
-
-## ✨ Chức năng
-
-- Điều khiển gạch (trái, phải, xoay)
-- Gạch rơi tự động
-- Xóa hàng khi đầy
-- Tính điểm
-- Game Over khi đầy màn hình
+Đây là game Tetris được xây dựng bằng Java Swing. Người chơi điều khiển các khối gạch rơi xuống, sắp xếp để tạo thành hàng ngang hoàn chỉnh để ghi điểm. Game kết thúc khi các khối gạch chạm đỉnh màn hình.
 
 ---
 
-## 💻 Công nghệ
+## ✨ Chức năng chính
 
-- Java
-- Java Swing
-- OOP (MVC)
+* Điều khiển gạch (trái, phải, xoay)
+* Gạch rơi tự động
+* Xóa hàng khi đầy
+* Tính điểm
+* Game Over khi đầy màn hình
 
 ---
 
-## 🚀 Cách chạy
+## 💻 Công nghệ sử dụng
 
-### Cách 1: Chạy file jar
+* Ngôn ngữ: Java
+* Giao diện: Java Swing
+* Kiến trúc: MVC (Model - View - Controller)
 
-```bash
+---
+
+## 📂 Cấu trúc project
+
+```
+src/
+ ┣ model
+ ┣ view
+ ┣ controller
+ ┣ utils
+ ┗ Main.java
+```
+
+---
+
+## 🚀 Hướng dẫn chạy
+
+### Cách 1: Chạy file JAR
+
+```
 java -jar TetrisGame.jar
+```
+
+### Cách 2: Chạy bằng code
+
+* Mở project bằng IDE (VS Code / IntelliJ)
+* Chạy file `Main.java`
+
+---
+
+## 📸 Demo
+
+Ảnh chụp màn hình 2026-04-01 225353.png
+Ảnh chụp màn hình 2026-04-01 225340.png
+
+---
+
+## 📌 Ghi chú
+
+* Game được phát triển phục vụ mục đích học tập
+* Có thể mở rộng thêm âm thanh, level, lưu điểm cao
+
