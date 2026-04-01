@@ -11,7 +11,7 @@ public class GameFrame extends JFrame {
         GamePanel panel = new GamePanel();
         add(panel);
 
-        pack(); // rất quan trọng
+        pack(); 
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -19,6 +19,6 @@ public class GameFrame extends JFrame {
 
         setVisible(true);
 
-        panel.requestFocusInWindow(); // để nhận phím
+        panel.requestFocusInWindow(); //nhan phim
     }
 }
