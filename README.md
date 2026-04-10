@@ -22,10 +22,10 @@
 
 ## ✨ Chức năng chính
 
-* Điều khiển gạch (trái, phải, xoay)
+* Điều khiển gạch (trái, phải,xuống, xoay)
 * Gạch rơi tự động
 * Xóa hàng khi đầy
-* Tính điểm
+* Tính điểm,tính số hàng xóa
 * Game Over khi đầy màn hình
 
 ---
@@ -53,13 +53,10 @@ src/
 
 ## 🚀 Hướng dẫn chạy
 
-### Cách 1: Chạy file JAR
 
-```
-java -jar TetrisGame.jar
-```
 
-### Cách 2: Chạy bằng code
+
+1: Chạy bằng code
 
 * Mở project bằng IDE (VS Code / IntelliJ)
 * Chạy file `Main.java`
