@@ -73,5 +73,5 @@ src/
 ## 📌 Ghi chú
 
 * Game được phát triển phục vụ mục đích học tập
-* Có thể mở rộng thêm âm thanh, level, lưu điểm cao
+
 
