@@ -6,12 +6,11 @@
 
 ## 👥 Thành viên nhóm
 
-| STT | Họ và Tên                                         | Vai trò        |
-| --- | -----------------                                 | -------------- |
-| 1   | Nguyen Huu Nguyen                                 | Code chính     |
-| 2   | Ma Tien Duc                                       | Thiết kế GUI   |
-| 3   | Tang Tan Duy Phuc                                 | Xử lý logic    |
-| 4   | Ma Tien Duc, Nguyen Huu Nguyen,Tang Tan Duy Phuc  | Test & báo cáo |
+| STT | Họ và Tên                                         
+| --- | -----------------                                 
+| 1   | Nguyen Huu Nguyen                                
+| 2   | Ma Tien Duc                                       
+| 3   | Tang Tan Duy Phuc                                 
 
 ---
 
